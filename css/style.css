@@ -1,9 +1,10 @@
 @import url("./css/reset.css");
 
-body {
+html, body {
     font-family: arial,sans-serif;
     margin:0;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
 }
 nav {
@@ -133,7 +134,7 @@ i {
 }
 
 main {
-    margin-bottom: 11%;
+    height: 79%;
 }
 footer {
     background: rgb(242, 242, 242);
@@ -141,16 +142,19 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     align-content: space-around;
     color: #5F6368;
+    width: 100%;
 
 }
 
 .country {
     grid-column: 1/3;
     border: solid 1px rgba(179, 187, 197, 0.5);
+    align-items: center;
+    justify-content: center;
 }
 
 .country h4 {
-    margin-left: 4.5%;
+    margin-left: 4%;
     font-size: 14px;
     font-weight: 300;
 }
@@ -163,4 +167,15 @@ footer :nth-child(3) {
 footer a {
     font-weight: 200;
     color: #5F6368;
+}
+
+@media screen and (max-width: 520px) {
+    .search {
+        margin-top: 10%;
+        width: 80%;
+    }
+
+    .navbar {
+        display: none;
+    }
 }
