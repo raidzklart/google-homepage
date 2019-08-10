@@ -2,6 +2,54 @@
 
 body {
     font-family: arial,sans-serif;
+    margin:0;
+    height: 100vh;
+    overflow: hidden;
+}
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-around;
+    height: 50px;
+    line-height: 50px;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+a {
+    text-decoration: none;
+    color: #222;
+    font-size: 0.8rem;
+    padding-left: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar .first {
+    grid-column: 1/2;
+}
+
+.navbar .first ul {
+    padding-left: 1rem;
+}
+
+.navbar .second {
+    grid-column: 2/3;
+    text-align: end;
+}
+
+.navbar .second ul {
+    margin: 1rem;
+    margin-right: 2rem; 
+}
+.navbar .second img{
+    border-radius: 50%;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .search {
@@ -10,7 +58,7 @@ body {
     text-align: center;
     width: 40%;
     margin: auto;
-    padding-top: 15.5%;
+    padding-top: 10%;
 }
 
 .search input {
@@ -35,7 +83,7 @@ body {
 }
 
 .search-field:hover {
-    box-shadow: 0.1px 0.1px 5px #5F6368;
+    box-shadow: 2px 2px 2px rgba(177, 183, 190, 0.5);
 }
 
 .search-buttons {
@@ -59,7 +107,7 @@ body {
 }
 
 .btn:hover{
-    box-shadow: 0.1px 0.1px 5px #5F6368;
+    box-shadow: 2px 2px 2px rgba(177, 183, 190, 0.5);
 }
 
 i {
@@ -82,4 +130,37 @@ i {
 .search p a {
     color: rgb(0, 0, 158);
     text-decoration: none;
+}
+
+main {
+    margin-bottom: 11%;
+}
+footer {
+    background: rgb(242, 242, 242);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-around;
+    color: #5F6368;
+
+}
+
+.country {
+    grid-column: 1/3;
+    border: solid 1px rgba(179, 187, 197, 0.5);
+}
+
+.country h4 {
+    margin-left: 4.5%;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer :nth-child(3) {
+    text-align: end;
+    margin-right: 4.5%;
+}
+
+footer a {
+    font-weight: 200;
+    color: #5F6368;
 }
